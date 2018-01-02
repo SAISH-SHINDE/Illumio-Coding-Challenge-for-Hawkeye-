@@ -1,0 +1,9 @@
+10.0.1.1:8080->192.168.0.1:80
+10.0.1.1:8080->192.168.0.3:80
+No NAT match for10.0.1.1:8080
+No NAT match for10.0.1.2:8080
+No NAT match for10.0.1.2:8080
+No NAT match for10.1.1.2:8080
+No NAT match for34.65.12.9:22
+No NAT match for5.6.7.8:55555
+9.8.7.6:21->1.2.3.4:12
