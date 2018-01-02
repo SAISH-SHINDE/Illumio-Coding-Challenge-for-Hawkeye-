@@ -12,7 +12,7 @@ map<string, string> sipmap; // map to store the values of ip address and port no
 
 class NAT
 {
-private: ofstream outfile; // output file stream object to write into OUTPUT file.
+private: fstream outfile; // output file stream object to write into OUTPUT file.
 
 
 public:
@@ -50,7 +50,7 @@ void FLOWip(string str)
 void result(map<string,string> &fst, map<string, string> &sip, map<string, string> &fip) // fst is firstip, sip is sipmap and fip is fipmap
  {
     map<string, string>:: iterator i,j,k;
-    outfile.open("OUTPUT.txt");
+    outfile.open("OUTPUT.txt", ios::out | ios::trunc);
 
     for(j=sip.begin(); j!=sip.end(); j++) // to get value from FLOW file one at time
     {   
